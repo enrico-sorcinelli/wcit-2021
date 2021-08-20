@@ -1,5 +1,3 @@
-
-
 /* CSS personalizzato da italia.wordcamp.org */
 /*Reduce warning message for YouTube Chat embed block*/
 p.wp-block-wordcamp-youtube-live-chat-embed__availability-warning {
@@ -272,7 +270,7 @@ input[type="submit"]:focus,
 #site-header:before {
 	content: '';
 	display: flex;
-	background: #A8D9FB;
+	background: #0080ff;
 	position: absolute;
 	width: 100%;
 	height: 315px;
@@ -881,14 +879,14 @@ figure.small-image {
 }
 */
 #site-header {
-	background: #A8D9FB;
+	background: #0080ff;
 	position: relative;
 }
 
 #site-header:after {
 	content: '';
 	display: flex;
-	background: #a8d9fb;
+	background: #0080ff;
 	position: absolute;
 	width: 100%;
 	height: 23px;
@@ -919,13 +917,13 @@ figure.small-image {
 }
 
 body:not(.overlay-header) .primary-menu  li  a {
-	color: #410206 !important;
+	color: #fff !important;
 	font-size: 2rem !important;
 	padding-left: 1rem !important;
 }
 
 .primary-menu .icon::before, .primary-menu .icon::after {
-	color: #410206;
+	color: #fff;
 }
 
 body:not(.overlay-header) .primary-menu ul {
@@ -1268,4 +1266,10 @@ span.wordcamp-schedule__column-header.is-column-track-track-1 {
 
 .wcb_sponsor-slug-woocommerce .featured-media img {
 	width: 65%;
+}
+
+/* HP featured image vertical alignment */
+#post-185 figure.featured-media {
+	margin-top: -225px;
+	z-index: 1000;
 }
