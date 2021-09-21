@@ -837,7 +837,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-	color: #FA3F4C;
+	color: #fe4242;
 }
 
 #site-content a:hover, #site-content a:focus {
@@ -898,14 +898,32 @@ figure.small-image {
 }
 
 @media (min-width: 700px) {
-	#site-header:after {
-		height: 100px;
-		bottom: -87px;
+	.home	#site-header:after {
+		height: 200px;
+		bottom: -180px;
 	}
 }
 
+@media (min-width: 1025px) {
+	.home	#site-header:after {
+		height: 200px;
+		bottom: -190px;
+	}
+}
+
+.home	#site-header:after {
+	height: 50px;
+	bottom: -40px;
+}
+
+#site-header:after {
+	background: #0080ff;
+	height: 80px;
+	bottom: -70px;
+}
+
 .blog #site-header:after {
-	background: #A8D9FB;
+	background: #0080ff;
 	height: 100px;
 	bottom: -87px;
 }
@@ -1048,7 +1066,7 @@ pre, fieldset, input, textarea, table, table *, hr {
 
 /* Footer*/
 .footer-nav-widgets-wrapper input[type="submit"], .footer-nav-widgets-wrapper button:not(.toggle) {
-	background-color: #A8D9FB;
+	background-color: #0080ff;
 	color: #000;
 }
 
@@ -1135,8 +1153,16 @@ pre, fieldset, input, textarea, table, table *, hr {
 
 .featured-media img {
 	margin: 0 auto;
-	max-width: 1000px;
+	max-width: 800px;
 	width: 100%;
+}
+
+@media (min-width:1025px) {
+	.featured-media img {
+		margin: 0 auto;
+		max-width: 1000px;
+		width: 100%;
+	}
 }
 
 .home .wp-block-latest-posts ul {
@@ -1256,7 +1282,7 @@ span.wordcamp-schedule__column-header.is-column-track-track-1 {
 
 @media screen and (min-width: 550px) {
 	body:not(.block-editor-page) .wordcamp-schedule:not(.is-style-single-column-layout) .wordcamp-schedule__column-header {
-		background-color: #a8d9fb !important;
+		background-color: #0080ff !important;
 	}
 }
 
@@ -1329,13 +1355,13 @@ span.wordcamp-schedule__column-header.is-column-track-track-1 {
 
 @media (min-width:767px) {
 	#post-185 figure.featured-media {
-		margin-top: -200px;
+		margin-top: -130px;
 	}
 }
 
 @media (min-width:1199px) {
 	#post-185 figure.featured-media {
-		margin-top: -225px;
+		margin-top: -140px;
 	}
 }
 
@@ -1358,4 +1384,14 @@ span.wordcamp-schedule__column-header.is-column-track-track-1 {
 
 body:not(.overlay-header) .primary-menu li.tickets a {
 	color: #0180ff !important;
+}
+
+@media (max-width:769px) {
+	.home .wp-block-column, .home .aligncenter, .home .wp-block-image:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.aligncenter) {
+		margin-bottom: 20px !important;
+	}
+
+	.featured-media img {
+		width: 90%;
+	}
 }
