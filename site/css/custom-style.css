@@ -317,9 +317,9 @@ input[type="submit"]:focus,
 	height: 100%;
 	z-index: 0;
 	/*background-image: url('https://cdn.jsdelivr.net/gh/SmashBrando/wordcamp-denver-2020@master/wc20-head.svg');
-		background-repeat: no-repeat;
-		opacity: .045;
-		background-size: 100%;*/
+	background-repeat: no-repeat;
+	opacity: .045;
+	background-size: 100%;*/
 }
 
 @media (max-width: 1199px) {
@@ -897,37 +897,6 @@ figure.small-image {
 	z-index: 1;
 }
 
-@media (min-width: 700px) {
-	.home	#site-header:after {
-		height: 200px;
-		bottom: -180px;
-	}
-}
-
-@media (min-width: 1025px) {
-	.home	#site-header:after {
-		height: 200px;
-		bottom: -190px;
-	}
-}
-
-.home	#site-header:after {
-	height: 50px;
-	bottom: -40px;
-}
-
-#site-header:after {
-	background: #0080ff;
-	height: 80px;
-	bottom: -70px;
-}
-
-.blog #site-header:after {
-	background: #0080ff;
-	height: 100px;
-	bottom: -87px;
-}
-
 @media (min-width: 1000px) {
 	.blog .header-inner {
 		padding-bottom: 0;
@@ -1361,7 +1330,7 @@ span.wordcamp-schedule__column-header.is-column-track-track-1 {
 
 @media (min-width:1199px) {
 	#post-185 figure.featured-media {
-		margin-top: -140px;
+		margin-top: -130px;
 	}
 }
 
@@ -1394,4 +1363,53 @@ body:not(.overlay-header) .primary-menu li.tickets a {
 	.featured-media img {
 		width: 90%;
 	}
+}
+
+/* Altezza header con diagonale */
+.home	#site-header:after {
+	height: 50px;
+	bottom: -40px;
+}
+
+@media (min-width: 700px) {
+	.home	#site-header:after {
+		height: 200px;
+		bottom: -180px;
+	}
+}
+
+@media (min-width: 1025px) {
+	.home	#site-header:after {
+		height: 200px;
+		bottom: -190px;
+	}
+}
+
+#site-header:after {
+	background: #0080ff;
+	height: 80px;
+	bottom: -70px;
+}
+
+.blog #site-header:after {
+	background: #0080ff;
+	height: 100px;
+	bottom: -87px;
+}
+
+/* pagina archivio sponsor */
+.page-slug-sponsor a[href*="yith"] img {
+	width: 280px;
+}
+
+.page-slug-sponsor a[href*="yoast"] img {
+	width: 330px;
+}
+
+.page-slug-sponsor a[href*="black-studio"] img {
+	width: 300px;
+}
+
+.page-slug-sponsor a[href*="serverplan"] img {
+	width: 300px;
 }
