@@ -22,4 +22,5 @@ In order to contribute to project you have to do following steps:
 - Push your branch on your GitHub origin and create new one pull request.
 
 ## Authors
-Enrico Sorcinelli  
+Enrico Sorcinelli
+Gloria Liuni  
