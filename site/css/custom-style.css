@@ -317,9 +317,9 @@ input[type="submit"]:focus,
 	height: 100%;
 	z-index: 0;
 	/*background-image: url('https://cdn.jsdelivr.net/gh/SmashBrando/wordcamp-denver-2020@master/wc20-head.svg');
-	background-repeat: no-repeat;
-	opacity: .045;
-	background-size: 100%;*/
+			background-repeat: no-repeat;
+			opacity: .045;
+			background-size: 100%;*/
 }
 
 @media (max-width: 1199px) {
@@ -828,6 +828,10 @@ body:not(.overlay-header) .primary-menu > li > a, body:not(.overlay-header) .pri
 body {
 	font-family: 'Source Sans Pro', sans-serif;
 	background: #fff;
+}
+
+.entry-content {
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1389,6 +1393,13 @@ body:not(.overlay-header) .primary-menu li.tickets a {
 	background: #0080ff;
 	height: 80px;
 	bottom: -70px;
+}
+
+@media (max-width: 767px) {
+	#site-header:after {
+		height: 23px;
+		bottom: -22px;
+	}
 }
 
 .blog #site-header:after {
