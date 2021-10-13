@@ -1208,12 +1208,20 @@ hr.wp-block-separator.separatore_header_home:before {
 	font-family: 'IM Fell English', serif !important;
 }
 
+span.wordcamp-schedule__column-header.is-column-time,
+span.wordcamp-schedule__column-header.is-column-track-traccia-1,
+span.wordcamp-schedule__column-header.is-column-track-traccia-2 {
+	color: #fff;
+	font-size: 2rem;
+}
+
 .wordcamp-schedule__day {
 	background-color: #ffffff !important;
 }
 
 .wordcamp-schedule__time-slot-header {
-	font-size: 2rem !important;
+	font-size: 1.5rem !important;
+	font-family: 'Source Sans Pro', sans-serif !important;
 }
 
 h4.wordcamp-schedule__session-title {
@@ -1225,14 +1233,19 @@ h4.wordcamp-schedule__session-title {
 }
 
 dl.wordcamp-schedule__session-speakers a {
-	color: #410206;
+	color: #268812;
 	font-size: 2rem;
 	text-decoration: underline;
+	font-family: 'Source Sans Pro', sans-serif !important;
 }
 
 span.wordcamp-schedule__column-header.is-column-time,
 span.wordcamp-schedule__column-header.is-column-track-track-1 {
 	border-right: 2px solid #fff;
+}
+
+dl.wordcamp-schedule__session-tracks {
+	font-size: 2rem;
 }
 
 /*
@@ -1310,7 +1323,8 @@ span.wordcamp-schedule__column-header.is-column-track-track-1 {
 .wcb_sponsor-slug-ionos .featured-media img,
 .wcb_sponsor-slug-serverplan .featured-media img,
 .wcb_sponsor-slug-black-studio .featured-media img,
-.wcb_sponsor-slug-kinsta .featured-media img {
+.wcb_sponsor-slug-kinsta .featured-media img,
+.wcb_sponsor-slug-aelia .featured-media img {
 	width: 60%;
 }
 
@@ -1417,10 +1431,72 @@ body:not(.overlay-header) .primary-menu li.tickets a {
 	width: 330px;
 }
 
-.page-slug-sponsor a[href*="black-studio"] img {
+.page-slug-sponsor a[href*="wp-ok"] img {
+	width: 230px;
+}
+
+.page-slug-sponsor a[href*="ergonet"] img {
+	width: 400px;
+}
+
+/* platinum sponsor */
+.page-slug-sponsor  ul.platinum a img {
+	max-width: 400px !important;
+}
+
+/* gold sponsor */
+.page-slug-sponsor  ul.gold a img {
+	max-width: 300px !important;
+}
+
+/*
+.page-slug-sponsor a[href*="wpsec"] img,
+.page-slug-sponsor a[href*="motork"] img,
+.page-slug-sponsor a[href*="black-studio"] img,
+.page-slug-sponsor a[href*="kinsta"] img {
 	width: 300px;
 }
 
 .page-slug-sponsor a[href*="serverplan"] img {
 	width: 300px;
+}
+*/
+#post-1221 figure.featured-media img {
+	max-width: 500px;
+}
+
+/* immagine speaker */
+.speaker-avatar img.attachment-96x96.size-96x96.wp-post-image {
+	width: 150px !important;
+	margin: 0 auto !important;
+	border-radius: 50% !important;
+}
+
+.wordcamp-image__avatar-link img {
+	border-radius: 50%;
+}
+
+/* nascondo img evidenza pagina sponsor */
+.page-id-10 figure.featured-media {
+	display: none;
+}
+
+/* Schedule remove link */
+h4.wordcamp-schedule__session-title a[href*="opening-remarks"],
+h4.wordcamp-schedule__session-title a[href*="pausa-2"],
+h4.wordcamp-schedule__session-title a[href*="pausa-3"],
+h4.wordcamp-schedule__session-title a[href*="pausa-4"],
+h4.wordcamp-schedule__session-title a[href*="pausa"],
+h4.wordcamp-schedule__session-title a[href*="closing-remarks-2"],
+h4.wordcamp-schedule__session-title a[href*="closing-remarks"] {
+	font-family: 'Source Sans Pro', sans-serif !important;
+	cursor: default;
+	pointer-events: none;
+	text-decoration: none;
+	color: #0f4c81;
+}
+
+/* Icona sub-menu */
+.primary-menu > li > .icon {
+	top: calc(50% - 0.9rem) !important;
 }
